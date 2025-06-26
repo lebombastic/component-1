@@ -1,0 +1,98 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="generator" content="Primo" />
+      <!-- HEAD_svelte-1bjv5r2_START --><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+
+#page {
+  font-family: system-ui, sans-serif;
+  color: var(--color);
+  line-height: 1.6; 
+  font-size: 1rem;
+  background: linear-gradient(to bottom, #159957, #155799); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.section-container {
+  max-width: var(--max-width, 1000px);
+  margin: 0 auto;
+  padding: 3rem var(--padding, 1rem); 
+}
+
+.heading {
+  font-size: 3rem;
+  line-height: 1;
+  font-weight: 700;
+  margin: 0;
+}
+
+.button {
+  color: white;
+  background: var(--color-accent);
+  border-radius: 5px;
+  padding: 8px 20px;
+  transition: var(--transition);
+}
+
+.button:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.1);
+  }
+
+.button.inverted {
+    background: transparent; 
+    color: var(--color-accent); 
+    border: 2px solid var(--color-accent);
+  }
+</style><!-- HEAD_svelte-1bjv5r2_END -->
+      <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');body{font-family:'Inter', sans-serif;margin:0;padding:0;background-color:#fafafa;color:#1a1a1a}.container.svelte-1vwvqek.svelte-1vwvqek{display:grid;grid-template-columns:1fr 1fr;gap:3rem;max-width:1400px;margin:0 auto;padding:2rem;min-height:100vh}.form-section.svelte-1vwvqek.svelte-1vwvqek{background:white;border-radius:16px;padding:2.5rem;box-shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1);height:-webkit-fit-content;height:-moz-fit-content;height:fit-content}.header.svelte-1vwvqek.svelte-1vwvqek{display:flex;align-items:center;gap:0.75rem;margin-bottom:2rem;position:relative}.icon.svelte-1vwvqek.svelte-1vwvqek{font-size:1.5rem}h1.svelte-1vwvqek.svelte-1vwvqek{font-size:1.75rem;font-weight:600;margin:0;color:#1a1a1a;flex:1}.config-btn.svelte-1vwvqek.svelte-1vwvqek{background:#f3f4f6;border:none;border-radius:8px;padding:0.5rem;cursor:pointer;font-size:1.2rem;transition:background-color 0.2s ease}.config-btn.svelte-1vwvqek.svelte-1vwvqek:hover{background:#e5e7eb}.api-config.svelte-1vwvqek.svelte-1vwvqek{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:1.5rem;margin-bottom:2rem}.api-config.svelte-1vwvqek h3.svelte-1vwvqek{margin:0 0 1rem 0;font-size:1.1rem;font-weight:600;color:#374151}.help-text.svelte-1vwvqek.svelte-1vwvqek{display:block;margin-top:0.25rem;font-size:0.8rem;color:#6b7280}.config-actions.svelte-1vwvqek.svelte-1vwvqek{display:flex;gap:0.75rem;margin-top:1rem}.save-config-btn.svelte-1vwvqek.svelte-1vwvqek{background:#10b981;color:white;border:none;padding:0.5rem 1rem;border-radius:6px;font-size:0.9rem;cursor:pointer;transition:background-color 0.2s ease}.save-config-btn.svelte-1vwvqek.svelte-1vwvqek:hover{background:#059669}.cancel-btn.svelte-1vwvqek.svelte-1vwvqek{background:#6b7280;color:white;border:none;padding:0.5rem 1rem;border-radius:6px;font-size:0.9rem;cursor:pointer;transition:background-color 0.2s ease}.cancel-btn.svelte-1vwvqek.svelte-1vwvqek:hover{background:#4b5563}.form-group.svelte-1vwvqek.svelte-1vwvqek{margin-bottom:1.5rem}label.svelte-1vwvqek.svelte-1vwvqek{display:block;font-weight:500;margin-bottom:0.5rem;color:#374151;font-size:0.95rem}input.svelte-1vwvqek.svelte-1vwvqek,select.svelte-1vwvqek.svelte-1vwvqek,textarea.svelte-1vwvqek.svelte-1vwvqek{width:100%;padding:0.75rem;border:1.5px solid #e5e7eb;border-radius:8px;font-size:0.95rem;font-family:'Inter', sans-serif;transition:border-color 0.2s ease, box-shadow 0.2s ease;background:white}input.svelte-1vwvqek.svelte-1vwvqek:focus,select.svelte-1vwvqek.svelte-1vwvqek:focus,textarea.svelte-1vwvqek.svelte-1vwvqek:focus{outline:none;border-color:#6366f1;box-shadow:0 0 0 3px rgba(99, 102, 241, 0.1)}input.svelte-1vwvqek.svelte-1vwvqek::-moz-placeholder,textarea.svelte-1vwvqek.svelte-1vwvqek::-moz-placeholder{color:#9ca3af}input.svelte-1vwvqek.svelte-1vwvqek:-ms-input-placeholder,textarea.svelte-1vwvqek.svelte-1vwvqek:-ms-input-placeholder{color:#9ca3af}input.svelte-1vwvqek.svelte-1vwvqek::placeholder,textarea.svelte-1vwvqek.svelte-1vwvqek::placeholder{color:#9ca3af}textarea.svelte-1vwvqek.svelte-1vwvqek{resize:vertical;min-height:80px}.generate-btn.svelte-1vwvqek.svelte-1vwvqek{width:100%;background:linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);color:white;border:none;padding:1rem 1.5rem;border-radius:12px;font-size:1rem;font-weight:600;cursor:pointer;transition:transform 0.2s ease, box-shadow 0.2s ease;font-family:'Inter', sans-serif;display:flex;align-items:center;justify-content:center;gap:0.5rem}.generate-btn.svelte-1vwvqek.svelte-1vwvqek:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 8px 25px rgba(99, 102, 241, 0.3)}.generate-btn.svelte-1vwvqek.svelte-1vwvqek:active:not(:disabled){transform:translateY(0)}.generate-btn.svelte-1vwvqek.svelte-1vwvqek:disabled{opacity:0.6;cursor:not-allowed}.spinner.svelte-1vwvqek.svelte-1vwvqek{width:16px;height:16px;border:2px solid rgba(255, 255, 255, 0.3);border-top:2px solid white;border-radius:50%;-webkit-animation:svelte-1vwvqek-spin 1s linear infinite;animation:svelte-1vwvqek-spin 1s linear infinite}@-webkit-keyframes svelte-1vwvqek-spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes svelte-1vwvqek-spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}.api-warning.svelte-1vwvqek.svelte-1vwvqek{text-align:center;color:#f59e0b;font-size:0.9rem;margin-top:1rem;padding:0.75rem;background:#fef3c7;border-radius:8px}.output-section.svelte-1vwvqek.svelte-1vwvqek{background:white;border-radius:16px;padding:2.5rem;box-shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1);height:-webkit-fit-content;height:-moz-fit-content;height:fit-content}h2.svelte-1vwvqek.svelte-1vwvqek{font-size:1.5rem;font-weight:600;margin:0 0 1.5rem 0;color:#1a1a1a}.output-content.svelte-1vwvqek.svelte-1vwvqek{min-height:200px}.placeholder.svelte-1vwvqek.svelte-1vwvqek{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:3rem 1rem;color:#6b7280}.placeholder-icon.svelte-1vwvqek.svelte-1vwvqek{font-size:3rem;margin-bottom:1rem;opacity:0.5}.placeholder.svelte-1vwvqek p.svelte-1vwvqek{margin:0;font-size:1rem;line-height:1.5}.prompt-display.svelte-1vwvqek.svelte-1vwvqek{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden}.prompt-header.svelte-1vwvqek.svelte-1vwvqek{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem;background:#e2e8f0;border-bottom:1px solid #cbd5e1}.prompt-label.svelte-1vwvqek.svelte-1vwvqek{font-weight:600;color:#374151;font-size:0.9rem}.copy-btn.svelte-1vwvqek.svelte-1vwvqek{background:#6366f1;color:white;border:none;padding:0.4rem 0.8rem;border-radius:6px;font-size:0.8rem;cursor:pointer;transition:background-color 0.2s ease}.copy-btn.svelte-1vwvqek.svelte-1vwvqek:hover{background:#4f46e5}.prompt-text.svelte-1vwvqek.svelte-1vwvqek{padding:1.5rem;line-height:1.6;font-size:0.95rem;white-space:pre-wrap;color:#1e293b;font-weight:500}.api-link.svelte-1vwvqek.svelte-1vwvqek{margin-left:0.5rem;text-decoration:none;font-size:0.9rem;opacity:0.7;transition:opacity 0.2s ease}.api-link.svelte-1vwvqek.svelte-1vwvqek:hover{opacity:1}.api-key-container.svelte-1vwvqek.svelte-1vwvqek{display:flex;gap:0.5rem;align-items:stretch}.api-key-container.svelte-1vwvqek input.svelte-1vwvqek{flex:1}.test-btn.svelte-1vwvqek.svelte-1vwvqek{background:#f3f4f6;border:1.5px solid #e5e7eb;border-radius:8px;padding:0.75rem;cursor:pointer;font-size:1rem;transition:all 0.2s ease;display:flex;align-items:center;justify-content:center;min-width:44px}.test-btn.svelte-1vwvqek.svelte-1vwvqek:hover:not(:disabled){background:#e5e7eb;border-color:#d1d5db}.test-btn.svelte-1vwvqek.svelte-1vwvqek:disabled{opacity:0.5;cursor:not-allowed}.spinner-small.svelte-1vwvqek.svelte-1vwvqek{width:12px;height:12px;border:2px solid rgba(0, 0, 0, 0.1);border-top:2px solid #6366f1;border-radius:50%;-webkit-animation:svelte-1vwvqek-spin 1s linear infinite;animation:svelte-1vwvqek-spin 1s linear infinite}.test-result.svelte-1vwvqek.svelte-1vwvqek{margin-top:0.5rem;padding:0.5rem;border-radius:6px;font-size:0.85rem;font-weight:500}.test-result.success.svelte-1vwvqek.svelte-1vwvqek{background:#d1fae5;color:#065f46;border:1px solid #a7f3d0}.test-result.error.svelte-1vwvqek.svelte-1vwvqek{background:#fee2e2;color:#991b1b;border:1px solid #fca5a5}@media(max-width: 1024px){.container.svelte-1vwvqek.svelte-1vwvqek{grid-template-columns:1fr;gap:2rem;padding:1rem}}@media(max-width: 640px){.form-section.svelte-1vwvqek.svelte-1vwvqek,.output-section.svelte-1vwvqek.svelte-1vwvqek{padding:1.5rem}h1.svelte-1vwvqek.svelte-1vwvqek{font-size:1.5rem}h2.svelte-1vwvqek.svelte-1vwvqek{font-size:1.25rem}.config-actions.svelte-1vwvqek.svelte-1vwvqek{flex-direction:column}}</style>
+    </head>
+    <body id="page">
+       
+<div class="section" id="section-777c266b"><main class="container svelte-1vwvqek"><div class="form-section svelte-1vwvqek"><div class="header svelte-1vwvqek"><div class="icon svelte-1vwvqek">✨</div>
+      <h1 class="svelte-1vwvqek">AI Prompt Generator</h1>
+      <button class="config-btn svelte-1vwvqek">⚙️
+      </button></div>
+
+    
+
+    <div class="form-group svelte-1vwvqek"><label for="category" class="svelte-1vwvqek">1. Select Category</label>
+      <select id="category" class="svelte-1vwvqek"><option value="">Choose a category...</option><option value="Business/Marketing">Business/Marketing</option><option value="Creative Writing">Creative Writing</option><option value="Educational">Educational</option><option value="General AI Assistant">General AI Assistant</option><option value="Image Generation">Image Generation</option><option value="Technical/Coding">Technical/Coding</option><option value="Video (VEO 3 AI)">Video (VEO 3 AI)</option></select></div>
+
+    <div class="form-group svelte-1vwvqek"><label for="objective" class="svelte-1vwvqek">2. What is your main objective?</label>
+      <input id="objective" type="text" placeholder="e.g., Write a product description for a new smartwatch" class="svelte-1vwvqek" value=""></div>
+
+    <div class="form-group svelte-1vwvqek"><label for="audience" class="svelte-1vwvqek">3. Target audience or context</label>
+      <input id="audience" type="text" placeholder="e.g., Tech-savvy consumers aged 25-40" class="svelte-1vwvqek" value=""></div>
+
+    <div class="form-group svelte-1vwvqek"><label for="tone" class="svelte-1vwvqek">4. Choose a tone</label>
+      <select id="tone" class="svelte-1vwvqek"><option value="">Select tone...</option><option value="Professional">Professional</option><option value="Creative">Creative</option><option value="Educational">Educational</option><option value="Helpful">Helpful</option><option value="Descriptive">Descriptive</option><option value="Technical">Technical</option><option value="Engaging">Engaging</option><option value="Casual">Casual</option><option value="Formal">Formal</option><option value="Conversational">Conversational</option></select></div>
+
+    <div class="form-group svelte-1vwvqek"><label for="requirements" class="svelte-1vwvqek">5. Specific requirements or constraints</label>
+      <textarea id="requirements" placeholder="e.g., Include key features, mention price range, highlight durability" rows="3" class="svelte-1vwvqek"></textarea></div>
+
+    <div class="form-group svelte-1vwvqek"><label for="format" class="svelte-1vwvqek">6. Preferred output format</label>
+      <input id="format" type="text" placeholder="e.g., Bullet points, paragraph form, JSON structure" class="svelte-1vwvqek" value=""></div>
+
+    <button class="generate-btn svelte-1vwvqek" disabled>🤖 Generate AI Prompt</button>
+
+    <p class="api-warning svelte-1vwvqek">⚠️ Please configure your API key to generate prompts</p></div>
+
+  <div class="output-section svelte-1vwvqek"><h2 class="svelte-1vwvqek">Generated AI Prompt</h2>
+    <div class="output-content svelte-1vwvqek"><div class="placeholder svelte-1vwvqek"><div class="placeholder-icon svelte-1vwvqek">🤖</div>
+          <p class="svelte-1vwvqek">Configure your API settings and fill out the form to generate a custom AI prompt using real AI models.</p></div></div></div></main></div> 
+
+      <script type="module">
+      import('/_symbols/30fbd6f1-17f5-456b-93c5-747fda488051.js')
+      .then(({default:App}) => {
+        
+            new App({
+              target: document.querySelector('#section-777c266b'),
+              hydrate: true,
+              props: {}
+            })
+          
+      })
+      .catch(e => console.error(e))
+    </script>
+    </body>
+  </html>
+  
