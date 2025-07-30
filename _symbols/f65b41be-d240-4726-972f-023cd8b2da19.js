@@ -1,4 +1,4 @@
-// Music pLayer - Updated June 26, 2025
+// Music pLayer - Updated July 30, 2025
 function noop() { }
 function assign(tar, src) {
     // @ts-ignore
@@ -732,7 +732,7 @@ class SvelteComponent {
 }
 
 /**
- * @license lucide-svelte v0.523.0 - ISC
+ * @license lucide-svelte v0.534.0 - ISC
  *
  * ISC License
  * 
@@ -1326,19 +1326,19 @@ function instance$b($$self, $$props, $$invalidate) {
 			"rect",
 			{
 				"x": "14",
-				"y": "4",
-				"width": "4",
-				"height": "16",
+				"y": "3",
+				"width": "5",
+				"height": "18",
 				"rx": "1"
 			}
 		],
 		[
 			"rect",
 			{
-				"x": "6",
-				"y": "4",
-				"width": "4",
-				"height": "16",
+				"x": "5",
+				"y": "3",
+				"width": "5",
+				"height": "18",
 				"rx": "1"
 			}
 		]
@@ -1471,7 +1471,15 @@ function create_fragment$a(ctx) {
 
 function instance$a($$self, $$props, $$invalidate) {
 	let { $$slots: slots = {}, $$scope } = $$props;
-	const iconNode = [["polygon", { "points": "6 3 20 12 6 21 6 3" }]];
+
+	const iconNode = [
+		[
+			"path",
+			{
+				"d": "M5 5a2 2 0 0 1 3.008-1.728l11.997 6.998a2 2 0 0 1 .003 3.458l-12 7A2 2 0 0 1 5 19z"
+			}
+		]
+	];
 
 	$$self.$$set = $$new_props => {
 		$$invalidate(1, $$props = assign(assign({}, $$props), exclude_internal_props($$new_props)));
@@ -1864,16 +1872,13 @@ function instance$7($$self, $$props, $$invalidate) {
 	let { $$slots: slots = {}, $$scope } = $$props;
 
 	const iconNode = [
-		["polygon", { "points": "19 20 9 12 19 4 19 20" }],
 		[
-			"line",
+			"path",
 			{
-				"x1": "5",
-				"x2": "5",
-				"y1": "19",
-				"y2": "5"
+				"d": "M17.971 4.285A2 2 0 0 1 21 6v12a2 2 0 0 1-3.029 1.715l-9.997-5.998a2 2 0 0 1-.003-3.432z"
 			}
-		]
+		],
+		["path", { "d": "M3 20V4" }]
 	];
 
 	$$self.$$set = $$new_props => {
@@ -2010,14 +2015,11 @@ function instance$6($$self, $$props, $$invalidate) {
 	let { $$slots: slots = {}, $$scope } = $$props;
 
 	const iconNode = [
-		["polygon", { "points": "5 4 15 12 5 20 5 4" }],
+		["path", { "d": "M21 4v16" }],
 		[
-			"line",
+			"path",
 			{
-				"x1": "19",
-				"x2": "19",
-				"y1": "5",
-				"y2": "19"
+				"d": "M6.029 4.285A2 2 0 0 0 3 6v12a2 2 0 0 0 3.029 1.715l9.997-5.998a2 2 0 0 0 .003-3.432z"
 			}
 		]
 	];
@@ -2151,35 +2153,19 @@ function instance$5($$self, $$props, $$invalidate) {
 	let { $$slots: slots = {}, $$scope } = $$props;
 
 	const iconNode = [
+		["path", { "d": "M10 11v6" }],
+		["path", { "d": "M14 11v6" }],
+		[
+			"path",
+			{
+				"d": "M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6"
+			}
+		],
 		["path", { "d": "M3 6h18" }],
 		[
 			"path",
 			{
-				"d": "M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"
-			}
-		],
-		[
-			"path",
-			{
-				"d": "M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"
-			}
-		],
-		[
-			"line",
-			{
-				"x1": "10",
-				"x2": "10",
-				"y1": "11",
-				"y2": "17"
-			}
-		],
-		[
-			"line",
-			{
-				"x1": "14",
-				"x2": "14",
-				"y1": "11",
-				"y2": "17"
+				"d": "M8 6V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"
 			}
 		]
 	];

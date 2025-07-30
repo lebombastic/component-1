@@ -1,4 +1,4 @@
-// New Block - Updated June 26, 2025
+// youtube-player - Updated July 30, 2025
 function noop() { }
 function run(fn) {
     return fn();

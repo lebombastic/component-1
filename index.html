@@ -2,14 +2,14 @@
   <html lang="en">
     <head>
       <meta name="generator" content="Primo" />
-      <!-- HEAD_svelte-1bjv5r2_START --><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
+      <!-- HEAD_svelte-t0ezii_START --><meta name="viewport" content="width=device-width, initial-scale=1.0"><style>@import url("https://unpkg.com/@primo-app/primo@1.3.64/reset.css");
 
 #page {
   font-family: system-ui, sans-serif;
   color: var(--color);
   line-height: 1.6; 
   font-size: 1rem;
-  background: linear-gradient(to bottom, #159957, #155799); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: gray;
 }
 
 .section-container {
@@ -42,50 +42,72 @@
     color: var(--color-accent); 
     border: 2px solid var(--color-accent);
   }
-</style><!-- HEAD_svelte-1bjv5r2_END -->
-      <style>@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');body{font-family:'Inter', sans-serif;margin:0;padding:0;background-color:#fafafa;color:#1a1a1a}.container.svelte-1vwvqek.svelte-1vwvqek{display:grid;grid-template-columns:1fr 1fr;gap:3rem;max-width:1400px;margin:0 auto;padding:2rem;min-height:100vh}.form-section.svelte-1vwvqek.svelte-1vwvqek{background:white;border-radius:16px;padding:2.5rem;box-shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1);height:-webkit-fit-content;height:-moz-fit-content;height:fit-content}.header.svelte-1vwvqek.svelte-1vwvqek{display:flex;align-items:center;gap:0.75rem;margin-bottom:2rem;position:relative}.icon.svelte-1vwvqek.svelte-1vwvqek{font-size:1.5rem}h1.svelte-1vwvqek.svelte-1vwvqek{font-size:1.75rem;font-weight:600;margin:0;color:#1a1a1a;flex:1}.config-btn.svelte-1vwvqek.svelte-1vwvqek{background:#f3f4f6;border:none;border-radius:8px;padding:0.5rem;cursor:pointer;font-size:1.2rem;transition:background-color 0.2s ease}.config-btn.svelte-1vwvqek.svelte-1vwvqek:hover{background:#e5e7eb}.api-config.svelte-1vwvqek.svelte-1vwvqek{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:1.5rem;margin-bottom:2rem}.api-config.svelte-1vwvqek h3.svelte-1vwvqek{margin:0 0 1rem 0;font-size:1.1rem;font-weight:600;color:#374151}.help-text.svelte-1vwvqek.svelte-1vwvqek{display:block;margin-top:0.25rem;font-size:0.8rem;color:#6b7280}.config-actions.svelte-1vwvqek.svelte-1vwvqek{display:flex;gap:0.75rem;margin-top:1rem}.save-config-btn.svelte-1vwvqek.svelte-1vwvqek{background:#10b981;color:white;border:none;padding:0.5rem 1rem;border-radius:6px;font-size:0.9rem;cursor:pointer;transition:background-color 0.2s ease}.save-config-btn.svelte-1vwvqek.svelte-1vwvqek:hover{background:#059669}.cancel-btn.svelte-1vwvqek.svelte-1vwvqek{background:#6b7280;color:white;border:none;padding:0.5rem 1rem;border-radius:6px;font-size:0.9rem;cursor:pointer;transition:background-color 0.2s ease}.cancel-btn.svelte-1vwvqek.svelte-1vwvqek:hover{background:#4b5563}.form-group.svelte-1vwvqek.svelte-1vwvqek{margin-bottom:1.5rem}label.svelte-1vwvqek.svelte-1vwvqek{display:block;font-weight:500;margin-bottom:0.5rem;color:#374151;font-size:0.95rem}input.svelte-1vwvqek.svelte-1vwvqek,select.svelte-1vwvqek.svelte-1vwvqek,textarea.svelte-1vwvqek.svelte-1vwvqek{width:100%;padding:0.75rem;border:1.5px solid #e5e7eb;border-radius:8px;font-size:0.95rem;font-family:'Inter', sans-serif;transition:border-color 0.2s ease, box-shadow 0.2s ease;background:white}input.svelte-1vwvqek.svelte-1vwvqek:focus,select.svelte-1vwvqek.svelte-1vwvqek:focus,textarea.svelte-1vwvqek.svelte-1vwvqek:focus{outline:none;border-color:#6366f1;box-shadow:0 0 0 3px rgba(99, 102, 241, 0.1)}input.svelte-1vwvqek.svelte-1vwvqek::-moz-placeholder,textarea.svelte-1vwvqek.svelte-1vwvqek::-moz-placeholder{color:#9ca3af}input.svelte-1vwvqek.svelte-1vwvqek:-ms-input-placeholder,textarea.svelte-1vwvqek.svelte-1vwvqek:-ms-input-placeholder{color:#9ca3af}input.svelte-1vwvqek.svelte-1vwvqek::placeholder,textarea.svelte-1vwvqek.svelte-1vwvqek::placeholder{color:#9ca3af}textarea.svelte-1vwvqek.svelte-1vwvqek{resize:vertical;min-height:80px}.generate-btn.svelte-1vwvqek.svelte-1vwvqek{width:100%;background:linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);color:white;border:none;padding:1rem 1.5rem;border-radius:12px;font-size:1rem;font-weight:600;cursor:pointer;transition:transform 0.2s ease, box-shadow 0.2s ease;font-family:'Inter', sans-serif;display:flex;align-items:center;justify-content:center;gap:0.5rem}.generate-btn.svelte-1vwvqek.svelte-1vwvqek:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 8px 25px rgba(99, 102, 241, 0.3)}.generate-btn.svelte-1vwvqek.svelte-1vwvqek:active:not(:disabled){transform:translateY(0)}.generate-btn.svelte-1vwvqek.svelte-1vwvqek:disabled{opacity:0.6;cursor:not-allowed}.spinner.svelte-1vwvqek.svelte-1vwvqek{width:16px;height:16px;border:2px solid rgba(255, 255, 255, 0.3);border-top:2px solid white;border-radius:50%;-webkit-animation:svelte-1vwvqek-spin 1s linear infinite;animation:svelte-1vwvqek-spin 1s linear infinite}@-webkit-keyframes svelte-1vwvqek-spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}@keyframes svelte-1vwvqek-spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}.api-warning.svelte-1vwvqek.svelte-1vwvqek{text-align:center;color:#f59e0b;font-size:0.9rem;margin-top:1rem;padding:0.75rem;background:#fef3c7;border-radius:8px}.output-section.svelte-1vwvqek.svelte-1vwvqek{background:white;border-radius:16px;padding:2.5rem;box-shadow:0 4px 6px -1px rgba(0, 0, 0, 0.1);height:-webkit-fit-content;height:-moz-fit-content;height:fit-content}h2.svelte-1vwvqek.svelte-1vwvqek{font-size:1.5rem;font-weight:600;margin:0 0 1.5rem 0;color:#1a1a1a}.output-content.svelte-1vwvqek.svelte-1vwvqek{min-height:200px}.placeholder.svelte-1vwvqek.svelte-1vwvqek{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:3rem 1rem;color:#6b7280}.placeholder-icon.svelte-1vwvqek.svelte-1vwvqek{font-size:3rem;margin-bottom:1rem;opacity:0.5}.placeholder.svelte-1vwvqek p.svelte-1vwvqek{margin:0;font-size:1rem;line-height:1.5}.prompt-display.svelte-1vwvqek.svelte-1vwvqek{background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;overflow:hidden}.prompt-header.svelte-1vwvqek.svelte-1vwvqek{display:flex;justify-content:space-between;align-items:center;padding:1rem 1.5rem;background:#e2e8f0;border-bottom:1px solid #cbd5e1}.prompt-label.svelte-1vwvqek.svelte-1vwvqek{font-weight:600;color:#374151;font-size:0.9rem}.copy-btn.svelte-1vwvqek.svelte-1vwvqek{background:#6366f1;color:white;border:none;padding:0.4rem 0.8rem;border-radius:6px;font-size:0.8rem;cursor:pointer;transition:background-color 0.2s ease}.copy-btn.svelte-1vwvqek.svelte-1vwvqek:hover{background:#4f46e5}.prompt-text.svelte-1vwvqek.svelte-1vwvqek{padding:1.5rem;line-height:1.6;font-size:0.95rem;white-space:pre-wrap;color:#1e293b;font-weight:500}.api-link.svelte-1vwvqek.svelte-1vwvqek{margin-left:0.5rem;text-decoration:none;font-size:0.9rem;opacity:0.7;transition:opacity 0.2s ease}.api-link.svelte-1vwvqek.svelte-1vwvqek:hover{opacity:1}.api-key-container.svelte-1vwvqek.svelte-1vwvqek{display:flex;gap:0.5rem;align-items:stretch}.api-key-container.svelte-1vwvqek input.svelte-1vwvqek{flex:1}.test-btn.svelte-1vwvqek.svelte-1vwvqek{background:#f3f4f6;border:1.5px solid #e5e7eb;border-radius:8px;padding:0.75rem;cursor:pointer;font-size:1rem;transition:all 0.2s ease;display:flex;align-items:center;justify-content:center;min-width:44px}.test-btn.svelte-1vwvqek.svelte-1vwvqek:hover:not(:disabled){background:#e5e7eb;border-color:#d1d5db}.test-btn.svelte-1vwvqek.svelte-1vwvqek:disabled{opacity:0.5;cursor:not-allowed}.spinner-small.svelte-1vwvqek.svelte-1vwvqek{width:12px;height:12px;border:2px solid rgba(0, 0, 0, 0.1);border-top:2px solid #6366f1;border-radius:50%;-webkit-animation:svelte-1vwvqek-spin 1s linear infinite;animation:svelte-1vwvqek-spin 1s linear infinite}.test-result.svelte-1vwvqek.svelte-1vwvqek{margin-top:0.5rem;padding:0.5rem;border-radius:6px;font-size:0.85rem;font-weight:500}.test-result.success.svelte-1vwvqek.svelte-1vwvqek{background:#d1fae5;color:#065f46;border:1px solid #a7f3d0}.test-result.error.svelte-1vwvqek.svelte-1vwvqek{background:#fee2e2;color:#991b1b;border:1px solid #fca5a5}@media(max-width: 1024px){.container.svelte-1vwvqek.svelte-1vwvqek{grid-template-columns:1fr;gap:2rem;padding:1rem}}@media(max-width: 640px){.form-section.svelte-1vwvqek.svelte-1vwvqek,.output-section.svelte-1vwvqek.svelte-1vwvqek{padding:1.5rem}h1.svelte-1vwvqek.svelte-1vwvqek{font-size:1.5rem}h2.svelte-1vwvqek.svelte-1vwvqek{font-size:1.25rem}.config-actions.svelte-1vwvqek.svelte-1vwvqek{flex-direction:column}}</style>
+</style><!-- HEAD_svelte-t0ezii_END -->
+      <style>.svelte-1iorv8v{margin:0;padding:0;box-sizing:border-box}.container.svelte-1iorv8v{max-width:1200px;margin:0 auto;padding:20px;min-height:100vh;position:relative}.header.svelte-1iorv8v{display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;flex-wrap:wrap;gap:15px}.title.svelte-1iorv8v{font-size:2rem;font-weight:700;color:#333}.search-container.svelte-1iorv8v{display:flex;align-items:center;position:relative}.search-input.svelte-1iorv8v{padding:12px 45px 12px 15px;border:2px solid #e0e0e0;border-radius:25px;font-size:16px;width:300px;outline:none;transition:border-color 0.3s}.search-input.svelte-1iorv8v:focus{border-color:#333}.search-icon.svelte-1iorv8v{position:absolute;right:15px;width:20px;height:20px;color:#666}.filters.svelte-1iorv8v{margin-bottom:30px}.sort-controls.svelte-1iorv8v{display:flex;gap:10px;margin-bottom:20px;flex-wrap:wrap}.sort-btn.svelte-1iorv8v{padding:8px 16px;border:1px solid #ddd;background:white;color:#333;border-radius:20px;cursor:pointer;font-size:14px;transition:all 0.3s}.sort-btn.active.svelte-1iorv8v{background:#333;color:white;border-color:#333}.tags-filter.svelte-1iorv8v{display:flex;gap:10px;overflow-x:auto;padding:10px 0;scrollbar-width:none;-ms-overflow-style:none}.tags-filter.svelte-1iorv8v::-webkit-scrollbar{display:none}.tag-filter.svelte-1iorv8v{padding:8px 16px;background:#f5f5f5;border:none;color:#333;border-radius:20px;cursor:pointer;white-space:nowrap;font-size:14px;transition:all 0.3s}.tag-filter.active.svelte-1iorv8v{background:#333;color:white}.notes-grid.svelte-1iorv8v{display:grid;grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));gap:20px;margin-bottom:100px}.note-card.svelte-1iorv8v{background:white;border:1px solid #e0e0e0;border-radius:12px;padding:20px;box-shadow:0 2px 8px rgba(0,0,0,0.1);transition:transform 0.2s, box-shadow 0.2s;cursor:pointer}.note-card.svelte-1iorv8v:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(0,0,0,0.15)}.note-title.svelte-1iorv8v{font-size:1.2rem;font-weight:600;margin-bottom:10px;color:#333}.note-text.svelte-1iorv8v{color:#666;margin-bottom:15px;line-height:1.5;overflow:hidden;display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical}.note-tags.svelte-1iorv8v{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:15px}.note-tag.svelte-1iorv8v{background:#f0f0f0;padding:4px 8px;border-radius:12px;font-size:12px;color:#666}.note-meta.svelte-1iorv8v{font-size:12px;color:#999;display:flex;justify-content:space-between}.add-btn.svelte-1iorv8v{position:fixed;bottom:30px;right:30px;width:60px;height:60px;background:#333;color:white;border:none;border-radius:50%;font-size:24px;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,0.2);transition:transform 0.2s;z-index:1000}.add-btn.svelte-1iorv8v:hover{transform:scale(1.1)}.modal.svelte-1iorv8v{position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,0.5);display:flex;align-items:center;justify-content:center;z-index:2000;padding:20px}.modal-content.svelte-1iorv8v{background:white;border-radius:12px;padding:30px;width:100%;max-width:500px;max-height:80vh;overflow-y:auto}.modal-header.svelte-1iorv8v{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px}.modal-title.svelte-1iorv8v{font-size:1.5rem;font-weight:600}.close-btn.svelte-1iorv8v{background:none;border:none;font-size:24px;cursor:pointer;color:#666}.form-group.svelte-1iorv8v{margin-bottom:20px}.form-label.svelte-1iorv8v{display:block;margin-bottom:8px;font-weight:500;color:#333}.form-input.svelte-1iorv8v{width:100%;padding:12px;border:2px solid #e0e0e0;border-radius:8px;font-size:16px;outline:none;color:#333;transition:border-color 0.3s}.form-input.svelte-1iorv8v:focus{border-color:#333}.form-textarea.svelte-1iorv8v{width:100%;padding:12px;color:#333;border:2px solid #e0e0e0;border-radius:8px;font-size:16px;outline:none;min-height:120px;resize:vertical;font-family:inherit;transition:border-color 0.3s}.form-textarea.svelte-1iorv8v:focus{border-color:#333}.modal-actions.svelte-1iorv8v{display:flex;gap:10px;justify-content:flex-end;margin-top:20px}.btn.svelte-1iorv8v{padding:12px 24px;border:none;border-radius:8px;cursor:pointer;font-size:16px;transition:background-color 0.3s}.btn-primary.svelte-1iorv8v{background:#333;color:white}.btn-primary.svelte-1iorv8v:hover{background:#555}.btn-secondary.svelte-1iorv8v{background:#f5f5f5;color:#333}.btn-secondary.svelte-1iorv8v:hover{background:#e0e0e0}.btn-danger.svelte-1iorv8v{background:#dc3545;color:white}.btn-danger.svelte-1iorv8v:hover{background:#c82333}.empty-state.svelte-1iorv8v{text-align:center;padding:60px 20px;color:#666}.empty-state-icon.svelte-1iorv8v{font-size:4rem;margin-bottom:20px;opacity:0.3}@media(max-width: 768px){.header.svelte-1iorv8v{flex-direction:column;align-items:flex-start}.search-input.svelte-1iorv8v{width:100%;max-width:300px}.search-icon.svelte-1iorv8v{display:block}.notes-grid.svelte-1iorv8v{grid-template-columns:1fr}.sort-controls.svelte-1iorv8v{justify-content:center}}</style>
     </head>
     <body id="page">
        
-<div class="section" id="section-777c266b"><main class="container svelte-1vwvqek"><div class="form-section svelte-1vwvqek"><div class="header svelte-1vwvqek"><div class="icon svelte-1vwvqek">✨</div>
-      <h1 class="svelte-1vwvqek">AI Prompt Generator</h1>
-      <button class="config-btn svelte-1vwvqek">⚙️
-      </button></div>
-
-    
-
-    <div class="form-group svelte-1vwvqek"><label for="category" class="svelte-1vwvqek">1. Select Category</label>
-      <select id="category" class="svelte-1vwvqek"><option value="">Choose a category...</option><option value="Business/Marketing">Business/Marketing</option><option value="Creative Writing">Creative Writing</option><option value="Educational">Educational</option><option value="General AI Assistant">General AI Assistant</option><option value="Image Generation">Image Generation</option><option value="Technical/Coding">Technical/Coding</option><option value="Video (VEO 3 AI)">Video (VEO 3 AI)</option></select></div>
-
-    <div class="form-group svelte-1vwvqek"><label for="objective" class="svelte-1vwvqek">2. What is your main objective?</label>
-      <input id="objective" type="text" placeholder="e.g., Write a product description for a new smartwatch" class="svelte-1vwvqek" value=""></div>
-
-    <div class="form-group svelte-1vwvqek"><label for="audience" class="svelte-1vwvqek">3. Target audience or context</label>
-      <input id="audience" type="text" placeholder="e.g., Tech-savvy consumers aged 25-40" class="svelte-1vwvqek" value=""></div>
-
-    <div class="form-group svelte-1vwvqek"><label for="tone" class="svelte-1vwvqek">4. Choose a tone</label>
-      <select id="tone" class="svelte-1vwvqek"><option value="">Select tone...</option><option value="Professional">Professional</option><option value="Creative">Creative</option><option value="Educational">Educational</option><option value="Helpful">Helpful</option><option value="Descriptive">Descriptive</option><option value="Technical">Technical</option><option value="Engaging">Engaging</option><option value="Casual">Casual</option><option value="Formal">Formal</option><option value="Conversational">Conversational</option></select></div>
-
-    <div class="form-group svelte-1vwvqek"><label for="requirements" class="svelte-1vwvqek">5. Specific requirements or constraints</label>
-      <textarea id="requirements" placeholder="e.g., Include key features, mention price range, highlight durability" rows="3" class="svelte-1vwvqek"></textarea></div>
-
-    <div class="form-group svelte-1vwvqek"><label for="format" class="svelte-1vwvqek">6. Preferred output format</label>
-      <input id="format" type="text" placeholder="e.g., Bullet points, paragraph form, JSON structure" class="svelte-1vwvqek" value=""></div>
-
-    <button class="generate-btn svelte-1vwvqek" disabled>🤖 Generate AI Prompt</button>
-
-    <p class="api-warning svelte-1vwvqek">⚠️ Please configure your API key to generate prompts</p></div>
-
-  <div class="output-section svelte-1vwvqek"><h2 class="svelte-1vwvqek">Generated AI Prompt</h2>
-    <div class="output-content svelte-1vwvqek"><div class="placeholder svelte-1vwvqek"><div class="placeholder-icon svelte-1vwvqek">🤖</div>
-          <p class="svelte-1vwvqek">Configure your API settings and fill out the form to generate a custom AI prompt using real AI models.</p></div></div></div></main></div> 
+<div class="section svelte-1iorv8v" id="section-812adf41"><div class="container svelte-1iorv8v"><div class="header svelte-1iorv8v"><h1 class="title svelte-1iorv8v">Note Organizer</h1>
+            <div class="search-container svelte-1iorv8v"><input type="text" class="search-input svelte-1iorv8v" placeholder="Search notes..." value="">
+                <svg class="search-icon svelte-1iorv8v" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" class="svelte-1iorv8v"></path></svg></div></div>
+        <div class="filters svelte-1iorv8v"><div class="sort-controls svelte-1iorv8v"><button class="sort-btn  svelte-1iorv8v">Date Created
+                </button>
+                <button class="sort-btn active svelte-1iorv8v">Date Modified
+                </button></div>
+            <div class="tags-filter svelte-1iorv8v"><button class="tag-filter active svelte-1iorv8v">All
+                </button>
+                <button class="tag-filter  svelte-1iorv8v">ideas
+                    </button><button class="tag-filter  svelte-1iorv8v">personal
+                    </button><button class="tag-filter  svelte-1iorv8v">projects
+                    </button><button class="tag-filter  svelte-1iorv8v">shopping
+                    </button><button class="tag-filter  svelte-1iorv8v">tutorial
+                    </button><button class="tag-filter  svelte-1iorv8v">welcome
+                    </button><button class="tag-filter  svelte-1iorv8v">work
+                    </button></div></div>
+        <div class="notes-grid svelte-1iorv8v">
+                    <div class="note-card svelte-1iorv8v" tabindex="0"><h3 class="note-title svelte-1iorv8v">shower ideas</h3>
+                        <p class="note-text svelte-1iorv8v">something</p>
+                        <div class="note-tags svelte-1iorv8v"><span class="note-tag svelte-1iorv8v">work</span></div>
+                        <div class="note-meta svelte-1iorv8v"><span class="svelte-1iorv8v">Created: Jul 30, 12:31 PM</span>
+                            <span class="svelte-1iorv8v">Modified: Jul 30, 12:41 PM</span></div>
+                    </div>
+                    <div class="note-card svelte-1iorv8v" tabindex="0"><h3 class="note-title svelte-1iorv8v">Welcome to Note Organizer</h3>
+                        <p class="note-text svelte-1iorv8v">This is your first note! You can create, edit, and organize notes with tags. Use the search bar to find notes quickly and filter by tags.</p>
+                        <div class="note-tags svelte-1iorv8v"><span class="note-tag svelte-1iorv8v">welcome</span><span class="note-tag svelte-1iorv8v">tutorial</span></div>
+                        <div class="note-meta svelte-1iorv8v"><span class="svelte-1iorv8v">Created: Jul 30, 12:30 PM</span>
+                            <span class="svelte-1iorv8v">Modified: Jul 30, 12:30 PM</span></div>
+                    </div>
+                    <div class="note-card svelte-1iorv8v" tabindex="0"><h3 class="note-title svelte-1iorv8v">Project Ideas</h3>
+                        <p class="note-text svelte-1iorv8v">List of project ideas:
+- Build a personal website
+- Learn a new programming language
+- Create a mobile app
+- Write a blog about coding</p>
+                        <div class="note-tags svelte-1iorv8v"><span class="note-tag svelte-1iorv8v">work</span><span class="note-tag svelte-1iorv8v">ideas</span><span class="note-tag svelte-1iorv8v">projects</span></div>
+                        <div class="note-meta svelte-1iorv8v"><span class="svelte-1iorv8v">Created: Jul 29, 12:30 PM</span>
+                            <span class="svelte-1iorv8v">Modified: Jul 29, 12:30 PM</span></div>
+                    </div>
+                    <div class="note-card svelte-1iorv8v" tabindex="0"><h3 class="note-title svelte-1iorv8v">Shopping List</h3>
+                        <p class="note-text svelte-1iorv8v">Weekly groceries:
+- Milk
+- Bread
+- Eggs
+- Fruits
+- Vegetables
+- Coffee</p>
+                        <div class="note-tags svelte-1iorv8v"><span class="note-tag svelte-1iorv8v">personal</span><span class="note-tag svelte-1iorv8v">shopping</span></div>
+                        <div class="note-meta svelte-1iorv8v"><span class="svelte-1iorv8v">Created: Jul 28, 12:30 PM</span>
+                            <span class="svelte-1iorv8v">Modified: Jul 28, 12:30 PM</span></div>
+                    </div></div>
+        <button class="add-btn svelte-1iorv8v">+</button>
+        </div></div> 
 
       <script type="module">
-      import('/_symbols/30fbd6f1-17f5-456b-93c5-747fda488051.js')
+      import('/_symbols/8c3030e8-efd3-42cd-b148-b0468fa1c470.js')
       .then(({default:App}) => {
         
             new App({
-              target: document.querySelector('#section-777c266b'),
+              target: document.querySelector('#section-812adf41'),
               hydrate: true,
               props: {}
             })
